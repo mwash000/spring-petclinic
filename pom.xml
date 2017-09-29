@@ -51,6 +51,11 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
     <dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-el</artifactId>
+    <scope>provided</scope>
+</dependency>
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
       <exclusions>
@@ -65,6 +70,11 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-tomcat</artifactId>
+		<scope>provided</scope>
+	</dependency>
 
     <!-- Databases - Uses HSQL by default -->
     <dependency>
@@ -147,11 +157,19 @@
         <version>2.2</version> 
         <configuration> 
         <server>tomcat-development-server</server> 
+<<<<<<< HEAD
         <url>http://144.38.201.180:8080/manager/text</url> 
         <warFile>target\spring-petclinic-1.5.1.war</warFile> 
         <path>/petclinic</path> 
 	<username>admin</username>
         <password>Tzioup393</password>
+=======
+        <url>http://144.38.196.18:8080/manager/text</url> 
+        <warFile>target\spring-petclinic-1.5.1.war</warFile> 
+        <path>/petclinic</path> 
+	<username>joe</username>
+        <password>1francom$</password>
+>>>>>>> 3a7991f2d5b877b1d7d54b5d428a982c106aa5ac
         </configuration> 
         </plugin> 
 
